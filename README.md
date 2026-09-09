@@ -1,45 +1,26 @@
-# ♻️ Waste Segregation Machine using Arduino UNO
+# Waste Segregation Machine using Arduino UNO
 
-## 📌 Project Overview
+## About the Project
 
-The **Waste Segregation Machine** is an Arduino UNO based system designed to automate the separation of wet and dry waste. The system uses sensors to detect the moisture content of waste and a servo motor to direct the waste into the appropriate container.
+The Waste Segregation Machine is a simple Arduino UNO based project developed to separate wet and dry waste. The main purpose of this project is to reduce manual effort in waste segregation and make the process easier using sensors and a small automatic mechanism.
 
-This project aims to reduce manual effort and demonstrate the use of embedded systems for automated waste management.
+The system uses a soil moisture sensor to detect the moisture present in the waste. The Arduino UNO receives the sensor reading and controls a servo motor based on the detected condition. The servo motor moves the waste towards the required container. An ultrasonic sensor is also included to monitor the waste level in the bin.
 
-## 🎯 Objectives
+## Components Used
 
-* To automate the segregation of wet and dry waste.
-* To detect waste moisture using a soil moisture sensor.
-* To control the segregation mechanism using Arduino UNO.
-* To use a servo motor for automatic waste direction.
-* To monitor the waste level using an ultrasonic sensor.
+The main components used in this project are Arduino UNO, soil moisture sensor, servo motor, ultrasonic sensor, jumper wires, waste containers and power supply.
 
-## 🧩 Components Used
+## Working
 
-* Arduino UNO
-* Soil Moisture Sensor
-* Servo Motor
-* Ultrasonic Sensor
-* Jumper Wires
-* Waste Containers
-* Power Supply
+When the waste is placed into the input section, the soil moisture sensor checks whether the waste contains moisture. The sensor value is given to the Arduino UNO, which processes the input and controls the servo motor.
 
-## 💻 Software Used
+The servo motor changes its position according to the detected waste condition and directs the waste into the respective container. The ultrasonic sensor is used to check the level of waste collected in the container.
 
-* Arduino IDE
-* Embedded C / Arduino Programming
+## Software Used
 
-## ⚙️ Working Principle
+The project was developed using the Arduino IDE and Arduino programming with Embedded C.
 
-1. Waste is placed into the input section.
-2. The soil moisture sensor detects the moisture content.
-3. The sensor sends the information to the Arduino UNO.
-4. Arduino processes the sensor input.
-5. The servo motor rotates the sorting mechanism.
-6. The waste is directed into the appropriate container.
-7. The ultrasonic sensor monitors the waste level in the container.
-
-## 🔄 System Flow
+## Project Flow
 
 ```text
 Waste Input
@@ -48,18 +29,14 @@ Soil Moisture Sensor
      ↓
 Arduino UNO
      ↓
-Waste Classification
-     ↓
 Servo Motor
      ↓
-Wet / Dry Waste Containers
+Wet / Dry Waste Container
      ↓
 Ultrasonic Sensor
-     ↓
-Bin Level Monitoring
 ```
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Waste-Segregation-Machine/
@@ -72,32 +49,17 @@ Waste-Segregation-Machine/
 └── README.md
 ```
 
-## 🚀 Key Features
+## Future Improvements
 
-* Automatic wet and dry waste segregation
-* Moisture-based waste detection
-* Arduino UNO based control
-* Servo motor based sorting
-* Ultrasonic sensor for bin-level monitoring
-* Simple embedded system implementation
+The project can be improved in the future by adding IoT connectivity, mobile notifications and additional sensors for identifying different types of waste. The system can also be developed further for larger-scale waste management applications.
 
-## 🔮 Future Enhancements
-
-* IoT-based waste monitoring
-* Mobile notifications for full bins
-* AI-based waste classification
-* Automatic conveyor-based waste movement
-* Cloud-based waste monitoring
-
-## 🎓 Project Information
+## Project Details
 
 **Project Title:** Waste Segregation Machine using Arduino UNO
-**Domain:** Embedded Systems / Automation
+**Domain:** Embedded Systems
 **Controller:** Arduino UNO
-**Programming:** Embedded C / Arduino Programming
-**Institution:** Dr. N.G.P. Institute of Technology
-**Department:** Electronics and Communication Engineering
+**Programming:** Embedded C / Arduino
 
-## 📜 Conclusion
+## Conclusion
 
-The **Waste Segregation Machine using Arduino UNO** demonstrates how sensors, microcontrollers, and motors can be combined to automate waste segregation. The system provides a simple approach for separating wet and dry waste and can be further enhanced using IoT and AI technologies.
+This project helped us understand the practical use of Arduino, sensors and servo motors in automation. The Waste Segregation Machine provides a simple method for separating wet and dry waste and can be further developed with additional features for real-world applications.
